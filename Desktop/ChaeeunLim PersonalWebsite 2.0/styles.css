@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Jua&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Pixelify+Sans:wght@400..700&family=Rubik+Bubbles&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jua&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Pixelify+Sans:wght@400..700&family=Rubik+Bubbles&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+:root {
+    --base-color: #ffffff;
+    --text-color: #000000;
+    --primary-color: #ffc06e;
+    --secondary-color: #8D8DFF;
+    --color-1: #F9F6F3;
+    --color-2: #F3f7F9;
+    --color-3: #F6F3F9;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family:'Nunito';
+    color: var(--text-color);
+}
+
+body {
+    padding: 1em;
+    background-color: var(--base-color);
+}
+
+h1, h2, h3 {
+    font-family:'rubik';
+}
