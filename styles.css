@@ -75,7 +75,7 @@ header img {
 }
 
 .text-container {
-    flex: 0 1 30em;
+    flex: 0 1 27em;
     font-size: 1.2rem;
 }
 
@@ -84,7 +84,18 @@ header img {
     text-decoration: none;
     color: white;
     background-color: var(--primary-color);
-    padding: .75em 1.25;
-    border-radius: .5em;
+    padding: .50em 1em;
+    border-radius: .3em;
     font-weight: 600;
+}
+
+.cta-button:hover {
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    background-color: var(--primary-color);
+    padding: .50em 1em;
+    border-radius: .3em;
+    font-weight: 600;
+    text-decoration: underline;
 }
