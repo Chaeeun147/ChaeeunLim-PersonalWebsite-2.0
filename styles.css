@@ -37,9 +37,10 @@ h1, h2, h3 {
 
 .h1-projects {
     font-family:'rubik';
-    margin-bottom: 1rem;
+    margin-top: 3rem;
     text-align: left;
-    padding-left: 3em
+    padding-left: 3em;
+    padding-top: 1em;
 }
 
 h6 {
@@ -194,6 +195,33 @@ header p {
 @keyframes spin {
     from {translate: 0;}
     to {translate: -100%}
+}
+
+/* tools */
+
+body ul {
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    gap: 2em;
+    margin-bottom: 1.25rem;
+    padding-left: 3em;
+}
+
+.tool-images {
+    width: 6em;
+}
+
+.tool-images:hover {
+    width: 7em;
+}
+
+.h1-tools {
+    font-family:'rubik';
+    margin-bottom: 1rem;
+    margin-bottom: 0rem;
+    text-align: left;
+    padding-left: 3em;
 }
 
 /* footer */
