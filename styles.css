@@ -22,6 +22,7 @@
 html {
     font-family:'Nunito';
     color: var(--text-color);
+    scroll-behavior: smooth;
 }
 
 body {
@@ -50,6 +51,7 @@ nav ul {
     align-items: center;
     list-style-type: none;
     gap: 2em;
+    margin-bottom: 1.25rem;
 }
 
 nav li:first-child {
@@ -87,6 +89,10 @@ header img {
     object-fit: cover;
     object-position: middle;
     max-width: 100%;
+}
+
+header p {
+    margin-bottom: 1.25rem;
 }
 
 .text-container {
@@ -183,4 +189,10 @@ header img {
 @keyframes spin {
     from {translate: 0;}
     to {translate: -100%}
+}
+
+/* footer */
+
+footer p {
+    text-align: center;
 }
