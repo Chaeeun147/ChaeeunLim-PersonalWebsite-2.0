@@ -4,12 +4,12 @@
 /* header */
 
 :root {
-    --base-color: #ffffff;
-    --text-color: #000000;
-    --primary-color: #ffc06e;
+    --base-color: #2d2d2d;
+    --text-color: #ffffff;
+    --primary-color: #ae854f;
     --secondary-color: #8D8DFF;
-    --color-1: #F9F6F3;
-    --color-2: #F3f7F9;
+    --color-1: #1e1e1e;
+    --color-2: #1b1b1b;
     --color-3: #F6F3F9;
 }
 
@@ -44,6 +44,10 @@ h1, h2, h3 {
 
 h6 {
   font-size: 1.5rem;
+}
+
+p{
+    font-size: 1em;
 }
 
 nav ul {
@@ -130,6 +134,7 @@ header p {
     overflow-x: auto;
     margin-top: 0;
     padding-top: 0;
+    overflow: hidden;
 }
 
 .carousel::-webkit-scrollbar {
@@ -151,7 +156,7 @@ header p {
 
 .card {
     flex: 0 0 8em;
-    height: 8em;
+    height: 7.5em;
     padding: .3em;
     background: var(--color-1);
     font-size: 3rem;
@@ -168,9 +173,9 @@ header p {
 
 .card:hover {
     flex: 0 0 9.3em;
-    height: 9.3em;
+    height: 7.5em;
     padding: .3em;
-    background: #ede9e6;
+    background: var(--color-2);
     font-size: 3rem;
     border-radius: .2rem;
     text-align: center;
