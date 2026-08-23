@@ -107,7 +107,6 @@ header img {
 .carousel {
     margin: 100px auto;
     width: 90%;
-    border: 5px solid red;
     display: flex;
     overflow-x: auto;
 }
@@ -121,20 +120,43 @@ header img {
     align-items: center;
     justify-content: center;
     gap : 1em;
-    animation: spin 5s infinite linear;
+    animation: spin 9s infinite linear;
     padding-right: 1em;
 }
 
+.carousel:hover .group {
+  animation-play-state: paused;
+}
+
 .card {
-    flex: 0 0 5em;
-    height: 5em;
-    padding: 1em;
-    background: cornflowerblue;
+    flex: 0 0 8em;
+    height: 8em;
+    padding: .3em;
+    background: var(--color-1);
     font-size: 3rem;
     border-radius: .2rem;
     text-align: center;
     align-content: center;
 }
+
+.card:hover {
+    flex: 0 0 9.3em;
+    height: 9.3em;
+    padding: .3em;
+    background: #ede9e6;
+    font-size: 3rem;
+    border-radius: .2rem;
+    text-align: center;
+    align-content: center;
+}
+
+.card-image {
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+    display: block;
+}
+
 @keyframes spin {
     from {translate: 0;}
     to {translate: -100%}
