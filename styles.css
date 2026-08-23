@@ -31,6 +31,18 @@ body {
 
 h1, h2, h3 {
     font-family:'rubik';
+    margin-bottom: 1rem;
+}
+
+.h1-projects {
+    font-family:'rubik';
+    margin-bottom: 1rem;
+    text-align: left;
+    padding-left: 3em
+}
+
+h6 {
+  font-size: 1.5rem;
 }
 
 nav ul {
@@ -73,7 +85,8 @@ header img {
     max-width: 100%;
     border-radius: 1em;
     object-fit: cover;
-    object-position: middle; 
+    object-position: middle;
+    max-width: 100%;
 }
 
 .text-container {
@@ -109,6 +122,8 @@ header img {
     width: 90%;
     display: flex;
     overflow-x: auto;
+    margin-top: 0;
+    padding-top: 0;
 }
 
 .carousel::-webkit-scrollbar {
@@ -137,6 +152,12 @@ header img {
     border-radius: .2rem;
     text-align: center;
     align-content: center;
+    border-radius: 1rem;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: .5rem;
 }
 
 .card:hover {
@@ -148,13 +169,15 @@ header img {
     border-radius: .2rem;
     text-align: center;
     align-content: center;
+    border-radius: 1rem;
 }
 
 .card-image {
-    height: 100%;
-    width: 100%;
-    object-fit: contain;
+    height: 90%;
+    width: 90%;
+    object-fit: cover;
     display: block;
+    border-radius: 1rem;
 }
 
 @keyframes spin {
