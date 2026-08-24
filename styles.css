@@ -47,10 +47,6 @@ h6 {
   font-size: 1.5rem;
 }
 
-p{
-    font-size: 1em;
-}
-
 nav ul {
     display: flex;
     align-items: center;
@@ -100,6 +96,10 @@ header p {
     margin-bottom: 1.25rem;
 }
 
+.discription {
+    font-size: 1.2rem;
+}
+
 .text-container {
     flex: 0 1 27 em;
     font-size: 1.2rem;
@@ -116,13 +116,6 @@ header p {
 }
 
 .cta-button:hover {
-    display: inline-block;
-    text-decoration: none;
-    color: white;
-    background-color: var(--primary-color);
-    padding: .50em 1em;
-    border-radius: .3em;
-    font-weight: 600;
     text-decoration: underline;
 }
 
@@ -157,7 +150,7 @@ header p {
 
 .card {
     flex: 0 0 8em;
-    height: 7.5em;
+    height: 9em;
     padding: .3em;
     background: var(--color-1);
     font-size: 3rem;
@@ -174,18 +167,36 @@ header p {
 
 .card:hover {
     flex: 0 0 9.3em;
-    height: 7.5em;
-    padding: .3em;
-    background: var(--color-2);
-    font-size: 3rem;
-    border-radius: .2rem;
-    text-align: center;
-    align-content: center;
-    border-radius: 1rem;
+}
+
+/* Container to center the buttons */
+.card ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  list-style: none;
+  padding: 0;
+  margin: 0.5rem 0 0 0; 
+}
+
+/* The individual button styling */
+.button {
+  display: inline-block;
+  text-decoration: none;
+  color: white;
+  background-color: var(--primary-color);
+  padding: 0.4rem 0.8rem;
+  border-radius: 4px;
+  font-size: 0.85rem;
+}
+
+.button:hover {
+    text-decoration: underline;
 }
 
 .card-image {
-    height: 90%;
+    height: 16rem;
     width: 90%;
     object-fit: cover;
     display: block;
@@ -197,6 +208,11 @@ header p {
     to {translate: -100%}
 }
 
+body p {
+    font-size: .4em;
+}
+
+
 /* tools */
 
 body ul {
@@ -205,7 +221,7 @@ body ul {
     list-style-type: none;
     gap: 2em;
     margin-bottom: 1.25rem;
-    padding-left: 3em;
+    padding-left: 4.5em;
 }
 
 .tool-images {
@@ -218,10 +234,14 @@ body ul {
 
 .h1-tools {
     font-family:'rubik';
-    margin-bottom: 1rem;
+    margin-bottom: 1em;
     margin-bottom: 0rem;
     text-align: left;
     padding-left: 3em;
+}
+
+.tools {
+    height: 12em;
 }
 
 /* footer */
