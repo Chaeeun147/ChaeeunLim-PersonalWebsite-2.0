@@ -5,3 +5,5 @@
 This is my personal website, where I simply showcase my projects and skills!
 
 How this was made: This project was made in VS Code using HTML and CSS.
+
+Check it out <a href=" https://chaeeun147.github.io/ChaeeunLim-PersonalWebsite-2.0/">here</a>!
