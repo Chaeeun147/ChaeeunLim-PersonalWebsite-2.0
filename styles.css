@@ -1,13 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Jua&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Pixelify+Sans:wght@400..700&family=Rubik+Bubbles&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Jua&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Pixelify+Sans:wght@400..700&family=Rubik+Bubbles&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
 
+/* header */
+
 :root {
-    --base-color: #ffffff;
-    --text-color: #000000;
-    --primary-color: #ffc06e;
+    --base-color: #2d2d2d;
+    --text-color: #ffffff;
+    --primary-color: #c89450;
     --secondary-color: #8D8DFF;
-    --color-1: #F9F6F3;
-    --color-2: #F3f7F9;
+    --color-1: #1e1e1e;
+    --color-2: #1b1b1b;
     --color-3: #F6F3F9;
 }
 
@@ -20,6 +22,7 @@
 html {
     font-family:'Nunito';
     color: var(--text-color);
+    scroll-behavior: smooth;
 }
 
 body {
@@ -29,6 +32,19 @@ body {
 
 h1, h2, h3 {
     font-family:'rubik';
+    margin-bottom: 1rem;
+}
+
+.h1-projects {
+    font-family:'rubik';
+    margin-top: 3rem;
+    text-align: left;
+    padding-left: 3em;
+    padding-top: 1em;
+}
+
+h6 {
+  font-size: 1.5rem;
 }
 
 nav ul {
@@ -36,6 +52,7 @@ nav ul {
     align-items: center;
     list-style-type: none;
     gap: 2em;
+    margin-bottom: 1.25rem;
 }
 
 nav li:first-child {
@@ -49,4 +66,185 @@ nav a {
 
 nav a:hover {
     text-decoration: underline;
+}
+
+header, section{
+    margin: 2em auto;
+    width: min(75em, 100%);
+    background-color: var(--color-1);
+    padding: min(2em,15%);
+    border-radius: 1em; 
+}
+
+.flex-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 3em;
+}
+
+header img {
+    max-width: 100%;
+    border-radius: 1em;
+    object-fit: cover;
+    object-position: middle;
+    max-width: 100%;
+}
+
+header p {
+    margin-bottom: 1.25rem;
+}
+
+.discription {
+    font-size: 1.2rem;
+}
+
+.text-container {
+    flex: 0 1 27 em;
+    font-size: 1.2rem;
+}
+
+.cta-button {
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    background-color: var(--primary-color);
+    padding: .50em 1em;
+    border-radius: .3em;
+    font-weight: 600;
+}
+
+.cta-button:hover {
+    text-decoration: underline;
+}
+
+/* projects */
+
+.carousel {
+    margin: 100px auto;
+    width: 90%;
+    display: flex;
+    overflow-x: auto;
+    margin-top: 0;
+    padding-top: 0;
+    overflow: hidden;
+}
+
+.carousel::-webkit-scrollbar {
+    display: none;
+}
+
+.group{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap : 1em;
+    animation: spin 9s infinite linear;
+    padding-right: 1em;
+}
+
+.carousel:hover .group {
+  animation-play-state: paused;
+}
+
+.card {
+    flex: 0 0 8em;
+    height: 9em;
+    padding: .3em;
+    background: var(--color-1);
+    font-size: 3rem;
+    border-radius: .2rem;
+    text-align: center;
+    align-content: center;
+    border-radius: 1rem;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: .5rem;
+}
+
+.card:hover {
+    flex: 0 0 9.3em;
+}
+
+/* Container to center the buttons */
+.card ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    list-style: none;
+    padding: 0;
+    margin: 0.5rem 0 0 0; 
+}
+
+/* The individual button styling */
+.button {
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    background-color: var(--primary-color);
+    padding: 0.4rem 0.8rem;
+    border-radius: 4px;
+    font-size: 0.85rem;
+}
+
+.button:hover {
+    text-decoration: underline;
+}
+
+.card-image {
+    width: 100%;
+    aspect-ratio: 16 / 10;
+    object-fit: cover;
+    border-radius: 15px;
+}
+
+@keyframes spin {
+    from {translate: 0;}
+    to {translate: -100%}
+}
+
+body p {
+    font-size: .4em;
+}
+
+
+/* tools */
+
+body ul {
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    gap: 2em;
+    margin-bottom: 1.25rem;
+    padding-left: 4.5em;
+}
+
+.tool-images {
+    width: 6em;
+}
+
+.tool-images:hover {
+    width: 7em;
+}
+
+.h1-tools {
+    font-family:'rubik';
+    margin-bottom: 1em;
+    margin-bottom: 0rem;
+    text-align: left;
+    padding-left: 3em;
+}
+
+.tools {
+    height: 12em;
+}
+
+/* footer */
+
+footer p {
+    text-align: center;
 }
